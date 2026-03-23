@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      Lis 5 nombres dans a et 5 nombres dans b. Si les 2 tableaux sont
+      identiques → affiche la lettre a Sinon → affiche la lettre b
+    </h1>
+    <script>
+      let tab1 = [];
+      let tab2 = [];
+      let same = true;
+
+      for (let i = 0; i < 5; i++) {
+        tab1[i] = Number(prompt("entrer un nombre"));
+      }
+
+      for (let i = 0; i < 5; i++) {
+        tab2[i] = Number(prompt("entrer un nombre"));
+      }
+
+      for (let i = 0; i < 5; i++) {
+        if (tab1[i] !== tab2[i]) {
+          same = false;
+          break;
+        }
+      }
+      if (same) {
+        console.log("a"); // identiques → a
+      } else {
+        console.log("b"); // pas identiques → b
+      }
+    </script>
+  </body>
+</html>

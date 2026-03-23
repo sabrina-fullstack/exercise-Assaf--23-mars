@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      Lis 10 nombres et affiche seulement les éléments dont la valeur n'est PAS
+      divisible par 3.
+    </h1>
+    <script>
+      let arr = [];
+
+      for (let i = 0; i < 10; i++) {
+        arr[i] = Number(prompt("enter number"));
+      }
+
+      for (let i = 0; i < 10; i++) {
+        if (arr[i] % 3 != 0) {
+          console.log(arr[i]);
+        }
+      }
+    </script>
+  </body>
+</html>

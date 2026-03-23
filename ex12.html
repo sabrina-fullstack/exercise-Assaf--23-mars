@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      Lis 10 nombres dans un tableau et un nombre x. Affiche tous les nombres
+      plus petits que x.
+    </h1>
+    <script>
+      let arr = [];
+      let x = Number(prompt("enter x"));
+
+      for (let i = 0; i < 10; i++) {
+        arr[i] = Number(prompt("enter number"));
+      }
+
+      for (let i = 0; i < 10; i++) {
+        if (arr[i] < x) {
+          console.log(arr[i]);
+        }
+      }
+    </script>
+  </body>
+</html>

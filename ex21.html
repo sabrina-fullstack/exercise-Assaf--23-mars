@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      Lis un nombre à 2 chiffres. Mets le chiffre des unités dans arr[0] et le
+      chiffre des dizaines dans arr[1].
+    </h1>
+    <script>
+      let num = Number(prompt("enter number"));
+      let arr = [];
+      arr[0] = num % 10; // unité
+      arr[1] = Math.floor(num / 10); // dizaines
+      console.log("Unités: " + arr[0]);
+      console.log("Dizaines: " + arr[1]);
+    </script>
+  </body>
+</html>

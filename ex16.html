@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Lis 5 nombres et affiche le nombre d'éléments supérieurs à 20.</h1>
+    <script>
+      let arr = [];
+      let count = 0;
+
+      for (let i = 0; i < 5; i++) {
+        arr[i] = Number(prompt("enter number"));
+      }
+
+      for (let i = 0; i < 5; i++) {
+        if (arr[i] > 20) {
+          count++;
+        }
+      }
+
+      console.log(count);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      Lis 7 nombres. S'il y a plus de nombres pairs affiche More even, sinon
+      affiche more odd.
+    </h1>
+    <script>
+      let arr = [];
+      let even = 0;
+      let odd = 0;
+
+      for (let i = 0; i < 7; i++) {    // i++c'est pareil que i = i + 1
+        arr[i] = Number(prompt("enter number"));
+      }
+
+      for (let i = 0; i < 7; i++) {
+        if (arr[i] % 2 === 0) {
+          even++;  // c'est pareil que even = even + 1
+        } else {
+          odd++;  // c'est pareil que odd = odd + 1
+        }
+      }
+
+      console.log(even > odd ? "More even" : "More odd");
+    </script>
+  </body>
+</html>
+<!-- let even = 0;  // even = 0
+even++;        // even = 1
+even++;        // even = 2
+even++;        // even = 3 -->
