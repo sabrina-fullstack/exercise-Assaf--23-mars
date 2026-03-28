@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Alloue deux tableaux a et b de taille 5.</h1>
+
+    <script>
+      // Alloue deux tableaux a et b de taille 5. Affiche la somme de a et la somme de b separement
+      const tabA = [1, 2, 3, 4, 5];
+      const tabB = [5, 7, 8, 0, 3];
+      let sumA = 0;
+      let sumB = 0;
+
+      for (let i = 0; i < tabA.length; i++) {
+        console.log(tabA[i]);
+      }
+
+      for (let i = 0; i < tabB.length; i++) {
+        console.log(tabB[i]);
+      }
+
+      for (let i = 0; i < tabA.length; i++) {
+        sumA += tabA[i];
+      }
+
+      for (let i = 0; i < tabB.length; i++) {
+        sumB += tabB[i];
+      }
+      console.log("sumA :", sumA);
+      console.log("sumB :", sumB);
+    </script>
+  </body>
+</html>

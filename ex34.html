@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      Lis 10 nombres dans un tableau. Affiche la somme et la moyenne des
+      elements aux places paires.
+    </h1>
+    <script>
+      const tab = [50, 100, 30, 46, 58, 69, 78, 80, 91, 0];
+      let sum = 0;
+      let compteur = 0;
+      for (let i = 0; i < tab.length; i++) {
+        if (i % 2 === 0) {
+          sum += tab[i];
+          compteur++;
+        }
+      }
+      let moyenne = sum / compteur;
+      console.log("Somme :", sum);
+      console.log("Moyenne :", moyenne);
+    </script>
+  </body>
+</html>

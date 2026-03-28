@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Références d’objets vs copies</h1>
+    <!-- Comprendre la différence entre référence et copie et entre const et objet-->
+    <script>
+      // Alloue deux tableaux a et b de taille 5. Lis des nombres dans les deux tableaux.
+      // Affiche "oui" si le produit des éléments de a est supérieur à la somme des éléments de b.
+      const taba = [1, 2, 3, 4, 5];
+      const tabb = [1, 2, 3, 4, 5];
+
+      for (let i = 0; i < taba.length; i++) {
+        console.log(taba[i]);
+      }
+
+      for (let i = 0; i < tabb.length; i++) {
+        console.log(tabb[i]);
+      }
+
+      let produitA = 1; // produit commence à 1 !
+      for (let i = 0; i < taba.length; i++) {
+        produitA = produitA * taba[i];
+      }
+
+      let sommeB = 0; // somme commence à 0 !
+      for (let i = 0; i < tabb.length; i++) {
+        sommeB += tabb[i];
+      }
+
+      if (produitA > sommeB) {
+        console.log("yes");
+      } else {
+        console.log("no");
+      }
+    </script>
+  </body>
+</html>

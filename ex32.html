@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      Lis 10 nombres double dans un tableau. Affiche la somme et la moyenne .
+    </h1>
+    <script>
+      const tab = [50, 100, 30, 46, 58, 69, 78, 80, 91, 0];
+      let sum = 0;
+
+      for (let i = 0; i < tab.length; i++) {
+        sum += tab[i];
+      }
+      let moyenne = sum / tab.length;
+      console.log("Somme :", sum);
+
+      console.log("Moyenne :", moyenne);
+      if (moyenne > 90) {
+        console.log("very good student");
+      } else if (moyenne >= 70 && moyenne <= 80) {
+        console.log("average student");
+      } else if (moyenne < 70) {
+        console.log("bad grades");
+      }
+    </script>
+  </body>
+</html>
